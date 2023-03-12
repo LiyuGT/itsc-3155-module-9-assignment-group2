@@ -34,3 +34,7 @@ def create_movie():
 def search_movies():
     # TODO: Feature 3
     return render_template('search_movies.html', search_active=True)
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run(host='0.0.0.0', port = 5000)
